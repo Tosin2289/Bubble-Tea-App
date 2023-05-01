@@ -1,16 +1,11 @@
 # bubble_tea_app
 
-A new Flutter project.
+Bubble Tea App in flutter
 
-## Getting Started
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+![Screenshot_1682914920](https://user-images.githubusercontent.com/66890167/235406255-fad82c6a-8959-4545-b7fc-bdba1bdec145.png)
+![Screenshot_1682914926](https://user-images.githubusercontent.com/66890167/235406269-a3e954bb-2301-46a4-9733-36b20334eefc.png)
+![Screenshot_1682914932](https://user-images.githubusercontent.com/66890167/235406272-29e01581-f87c-4422-a808-46562f41916c.png)
+![Screenshot_1682914940](https://user-images.githubusercontent.com/66890167/235406280-56de39f1-701d-4625-8dd3-dc4b157b29c2.png)
+![Screenshot_1682914950](https://user-images.githubusercontent.com/66890167/235406285-731f4d3d-29bd-419e-99ca-d1cd20c4f076.png)
+![Screenshot_1682914955](https://user-images.githubusercontent.com/66890167/235406289-302a6100-2f2e-4681-8b09-9ef305d492bc.png)
