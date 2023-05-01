@@ -1,4 +1,9 @@
+import 'package:bubble_tea_app/components/drink_tile.dart';
+import 'package:bubble_tea_app/model/drink.dart';
+import 'package:bubble_tea_app/model/shop.dart';
+import 'package:bubble_tea_app/pages/order_page.dart';
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
 
 class Shop extends StatefulWidget {
   const Shop({Key? key}) : super(key: key);
@@ -8,10 +13,40 @@ class Shop extends StatefulWidget {
 }
 
 class _ShopState extends State<Shop> {
+  void goToOrderPage(Drink drink) {
+    Navigator.push(context, MaterialPageRoute(builder: ((context) {
+      return OrderPage(
+        drink: drink,
+      );
+    })));
+  }
+
   @override
   Widget build(BuildContext context) {
-    return Center(
-      child: Text("Shop"),
-    );
+    return Consumer<BubbleTeaShop>(builder: ((context, value, child) {
+      return SafeArea(
+          child: Padding(
+        padding: const EdgeInsets.all(25.0),
+        child: Column(
+          children: [
+            Text(
+              "Bubble Tea Shop",
+              style: TextStyle(fontSize: 20),
+            ),
+            Expanded(
+                child: ListView.builder(
+                    itemCount: value.shop.length,
+                    itemBuilder: ((context, index) {
+                      Drink indvidualDrink = value.shop[index];
+                      return DrinkTile(
+                        trailling: Icon(Icons.forward),
+                        drink: indvidualDrink,
+                        onPressed: (() => goToOrderPage(indvidualDrink)),
+                      );
+                    })))
+          ],
+        ),
+      ));
+    }));
   }
 }
