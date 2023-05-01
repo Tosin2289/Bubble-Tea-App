@@ -1,3 +1,4 @@
+import 'package:bubble_tea_app/components/drawer.dart';
 import 'package:bubble_tea_app/components/drink_card.dart';
 import 'package:bubble_tea_app/components/drink_tile.dart';
 import 'package:bubble_tea_app/model/drink.dart';
@@ -25,32 +26,41 @@ class _ShopState extends State<Shop> {
   @override
   Widget build(BuildContext context) {
     return Consumer<BubbleTeaShop>(builder: ((context, value, child) {
-      return SafeArea(
-          child: Padding(
-        padding: const EdgeInsets.all(25.0),
-        child: Column(
-          children: [
-            Text(
-              "Bubble Tea Shop",
-              style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
-            ),
-            SizedBox(
-              height: 50,
-            ),
-            Expanded(
-                child: ListView.builder(
-                    scrollDirection: Axis.horizontal,
-                    itemCount: value.shop.length,
-                    itemBuilder: ((context, index) {
-                      Drink indvidualDrink = value.shop[index];
-                      return DrinkCard(
-                        drink: indvidualDrink,
-                        onPressed: (() => goToOrderPage(indvidualDrink)),
-                      );
-                    })))
-          ],
+      return Scaffold(
+        appBar: AppBar(
+          iconTheme: IconThemeData(color: Colors.black),
+          backgroundColor: Colors.transparent,
+          elevation: 0,
         ),
-      ));
+        backgroundColor: Colors.brown[200],
+        drawer: myDrawer(),
+        body: SafeArea(
+            child: Padding(
+          padding: const EdgeInsets.all(25.0),
+          child: Column(
+            children: [
+              Text(
+                "Bubble Tea Shop",
+                style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+              ),
+              SizedBox(
+                height: 50,
+              ),
+              Expanded(
+                  child: ListView.builder(
+                      scrollDirection: Axis.horizontal,
+                      itemCount: value.shop.length,
+                      itemBuilder: ((context, index) {
+                        Drink indvidualDrink = value.shop[index];
+                        return DrinkCard(
+                          drink: indvidualDrink,
+                          onPressed: (() => goToOrderPage(indvidualDrink)),
+                        );
+                      })))
+            ],
+          ),
+        )),
+      );
     }));
   }
 }

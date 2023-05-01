@@ -113,6 +113,8 @@ class _OrderPageState extends State<OrderPage> {
             ),
           ),
           MaterialButton(
+            shape:
+                RoundedRectangleBorder(borderRadius: BorderRadius.circular(10)),
             minWidth: 300,
             height: 60,
             color: Colors.brown,

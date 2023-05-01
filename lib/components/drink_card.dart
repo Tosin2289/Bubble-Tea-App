@@ -41,7 +41,7 @@ class DrinkCard extends StatelessWidget {
                 height: 10,
               ),
               Text(
-                drink.price,
+                '\$${drink.price}',
                 style: TextStyle(
                   fontSize: 20,
                 ),
@@ -50,6 +50,8 @@ class DrinkCard extends StatelessWidget {
                 height: 20,
               ),
               MaterialButton(
+                shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(10)),
                 minWidth: 150,
                 height: 50,
                 color: Colors.brown,

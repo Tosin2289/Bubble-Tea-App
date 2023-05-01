@@ -24,7 +24,7 @@ class DrinkTile extends StatelessWidget {
               borderRadius: BorderRadius.circular(12)),
           child: ListTile(
             title: Text(drink.name),
-            subtitle: Text(drink.price),
+            subtitle: Text('\$${drink.price}'),
             leading: Image.asset(drink.img),
             trailing: trailling,
           ),

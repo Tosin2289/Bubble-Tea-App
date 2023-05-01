@@ -1,5 +1,6 @@
 import 'package:bubble_tea_app/model/shop.dart';
 import 'package:bubble_tea_app/pages/homepage.dart';
+import 'package:bubble_tea_app/splash.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
@@ -17,7 +18,7 @@ class MyApp extends StatelessWidget {
       builder: ((context, child) => MaterialApp(
             debugShowCheckedModeBanner: false,
             theme: ThemeData(primarySwatch: Colors.brown),
-            home: HomePage(),
+            home: Splash(),
           )),
     );
   }
