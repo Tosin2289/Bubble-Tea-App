@@ -41,10 +41,12 @@ class _CartState extends State<Cart> {
                                   trailling: Icon(Icons.delete));
                             }))),
                     MaterialButton(
+                      minWidth: 300.0,
+                      height: 60,
                       onPressed: () {},
                       child: Text(
                         "Pay",
-                        style: TextStyle(color: Colors.white),
+                        style: TextStyle(color: Colors.white, fontSize: 20),
                       ),
                       color: Colors.brown,
                     )

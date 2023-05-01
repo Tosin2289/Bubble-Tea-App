@@ -1,3 +1,4 @@
+import 'package:bubble_tea_app/components/drink_card.dart';
 import 'package:bubble_tea_app/components/drink_tile.dart';
 import 'package:bubble_tea_app/model/drink.dart';
 import 'package:bubble_tea_app/model/shop.dart';
@@ -31,15 +32,18 @@ class _ShopState extends State<Shop> {
           children: [
             Text(
               "Bubble Tea Shop",
-              style: TextStyle(fontSize: 20),
+              style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+            ),
+            SizedBox(
+              height: 50,
             ),
             Expanded(
                 child: ListView.builder(
+                    scrollDirection: Axis.horizontal,
                     itemCount: value.shop.length,
                     itemBuilder: ((context, index) {
                       Drink indvidualDrink = value.shop[index];
-                      return DrinkTile(
-                        trailling: Icon(Icons.forward),
+                      return DrinkCard(
                         drink: indvidualDrink,
                         onPressed: (() => goToOrderPage(indvidualDrink)),
                       );

@@ -113,9 +113,14 @@ class _OrderPageState extends State<OrderPage> {
             ),
           ),
           MaterialButton(
+            minWidth: 300,
+            height: 60,
             color: Colors.brown,
             onPressed: addToCart,
-            child: Text("Add To Cart"),
+            child: Text(
+              "Add To Cart",
+              style: TextStyle(color: Colors.white, fontSize: 18),
+            ),
           )
         ],
       ),
