@@ -3,6 +3,8 @@ import 'package:bubble_tea_app/pages/cart.dart';
 import 'package:bubble_tea_app/pages/shop.dart';
 import 'package:flutter/material.dart';
 
+import '../components/drawer.dart';
+
 class HomePage extends StatefulWidget {
   HomePage({Key? key}) : super(key: key);
 
@@ -22,11 +24,17 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        iconTheme: IconThemeData(color: Colors.black),
+        elevation: 0,
+        backgroundColor: Colors.transparent,
+      ),
       backgroundColor: Colors.brown[200],
       bottomNavigationBar: BottomNavBar(
         onTabChange: ((index) => navigatebottombar(index)),
       ),
       body: _pages[_selectedIndex],
+      drawer: myDrawer(),
     );
   }
 }

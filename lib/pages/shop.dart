@@ -27,11 +27,6 @@ class _ShopState extends State<Shop> {
   Widget build(BuildContext context) {
     return Consumer<BubbleTeaShop>(builder: ((context, value, child) {
       return Scaffold(
-        appBar: AppBar(
-          iconTheme: IconThemeData(color: Colors.black),
-          backgroundColor: Colors.transparent,
-          elevation: 0,
-        ),
         backgroundColor: Colors.brown[200],
         drawer: myDrawer(),
         body: SafeArea(
