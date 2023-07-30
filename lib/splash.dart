@@ -1,9 +1,8 @@
-import 'package:bubble_tea_app/pages/homepage.dart';
 import 'package:bubble_tea_app/pages/intropage.dart';
 import 'package:flutter/material.dart';
 
 class Splash extends StatefulWidget {
-  Splash({Key? key}) : super(key: key);
+  const Splash({Key? key}) : super(key: key);
 
   @override
   State<Splash> createState() => _SplashState();
@@ -12,13 +11,12 @@ class Splash extends StatefulWidget {
 class _SplashState extends State<Splash> {
   @override
   void initState() {
-    // TODO: implement initState
     super.initState();
     navigatetohome();
   }
 
   navigatetohome() async {
-    await Future.delayed(Duration(milliseconds: 2000), (() {}));
+    await Future.delayed(const Duration(milliseconds: 2000), (() {}));
     Navigator.pushReplacement(context, MaterialPageRoute(builder: ((context) {
       return IntroPage();
     })));
@@ -36,7 +34,7 @@ class _SplashState extends State<Splash> {
               'assets/img7.png',
               height: 200,
             ),
-            SizedBox(
+            const SizedBox(
               height: 20,
             ),
             ShaderMask(
@@ -46,7 +44,7 @@ class _SplashState extends State<Splash> {
               ]).createShader(
                 Rect.fromLTWH(0, 0, bounds.width, bounds.height),
               ),
-              child: Text(
+              child: const Text(
                 "Bubble Tea Shop",
                 style: TextStyle(
                     fontSize: 28,

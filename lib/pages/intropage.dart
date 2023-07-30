@@ -16,27 +16,27 @@ class IntroPage extends StatelessWidget {
               'assets/img6.png',
               height: 250,
             ),
-            SizedBox(
+            const SizedBox(
               height: 20,
             ),
-            Text(
+            const Text(
               "Bubble Tea Shop",
               style: TextStyle(
                   fontSize: 28,
                   color: Colors.white,
                   fontWeight: FontWeight.bold),
             ),
-            SizedBox(
+            const SizedBox(
               height: 20,
             ),
-            Text(
+            const Text(
               "Get your sweet, tasty bubble tea",
               style: TextStyle(
                 color: Colors.brown,
                 fontSize: 20,
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 80,
             ),
             MaterialButton(
@@ -50,7 +50,7 @@ class IntroPage extends StatelessWidget {
                   return HomePage();
                 })));
               }),
-              child: Text(
+              child: const Text(
                 "Enter Shop",
                 style: TextStyle(color: Colors.white, fontSize: 18),
               ),
