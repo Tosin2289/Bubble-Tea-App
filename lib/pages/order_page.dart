@@ -36,7 +36,7 @@ class _OrderPageState extends State<OrderPage> {
   void addToCart() {
     Provider.of<BubbleTeaShop>(context, listen: false).addToCart(widget.drink);
     Navigator.pop(context);
-    final snackbar = SnackBar(content: Text("Item Sucessfully added to cart"));
+    const snackbar = SnackBar(content: Text("Item Sucessfully added to cart"));
     ScaffoldMessenger.of(context).showSnackBar(snackbar);
   }
 
@@ -64,7 +64,7 @@ class _OrderPageState extends State<OrderPage> {
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
-                    SizedBox(
+                    const SizedBox(
                       width: 100,
                       child: Text("Sweet"),
                     ),
@@ -80,7 +80,7 @@ class _OrderPageState extends State<OrderPage> {
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
-                    SizedBox(
+                    const SizedBox(
                       width: 100,
                       child: Text("ice"),
                     ),
@@ -96,7 +96,7 @@ class _OrderPageState extends State<OrderPage> {
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
-                    SizedBox(
+                    const SizedBox(
                       width: 100,
                       child: Text("pearls"),
                     ),
@@ -119,7 +119,7 @@ class _OrderPageState extends State<OrderPage> {
             height: 60,
             color: Colors.brown,
             onPressed: addToCart,
-            child: Text(
+            child: const Text(
               "Add To Cart",
               style: TextStyle(color: Colors.white, fontSize: 18),
             ),

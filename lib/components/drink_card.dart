@@ -30,23 +30,24 @@ class DrinkCard extends StatelessWidget {
                 drink.img,
                 height: 200,
               ),
-              SizedBox(
+              const SizedBox(
                 height: 50,
               ),
               Text(
                 drink.name,
-                style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+                style:
+                    const TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 10,
               ),
               Text(
                 '\$${drink.price}',
-                style: TextStyle(
+                style: const TextStyle(
                   fontSize: 20,
                 ),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 20,
               ),
               MaterialButton(
@@ -56,8 +57,8 @@ class DrinkCard extends StatelessWidget {
                 height: 50,
                 color: Colors.brown,
                 onPressed: onPressed,
-                child:
-                    Text("Add To Cart", style: TextStyle(color: Colors.white)),
+                child: const Text("Add To Cart",
+                    style: TextStyle(color: Colors.white)),
               ),
             ],
           ),

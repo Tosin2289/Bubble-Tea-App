@@ -19,47 +19,47 @@ class myDrawer extends StatelessWidget {
               UserAccountsDrawerHeader(
                   decoration: BoxDecoration(
                       color: Colors.brown[400],
-                      borderRadius:
-                          BorderRadius.only(bottomRight: Radius.circular(50))),
-                  accountName: Text("Rookie"),
-                  accountEmail: Text(""),
-                  currentAccountPicture: CircleAvatar(
+                      borderRadius: const BorderRadius.only(
+                          bottomRight: Radius.circular(50))),
+                  accountName: const Text("Rookie"),
+                  accountEmail: const Text(""),
+                  currentAccountPicture: const CircleAvatar(
                     backgroundImage: AssetImage('assets/img6.png'),
                   )),
               ListTile(
                 onTap: (() {
                   Navigator.push(context,
                       MaterialPageRoute(builder: ((context) {
-                    return Contact();
+                    return const Contact();
                   })));
                 }),
                 textColor: Colors.white,
-                leading: Icon(Icons.label),
-                title: Text("Contact"),
+                leading: const Icon(Icons.label),
+                title: const Text("Contact"),
               ),
               ListTile(
                 onTap: (() {
                   Navigator.push(context,
                       MaterialPageRoute(builder: ((context) {
-                    return About();
+                    return const About();
                   })));
                 }),
                 textColor: Colors.white,
-                leading: Icon(Icons.label),
-                title: Text("About"),
+                leading: const Icon(Icons.label),
+                title: const Text("About"),
               ),
             ],
           ),
           Column(
             children: [
-              Divider(),
+              const Divider(),
               ListTile(
                 onTap: (() {
                   SystemNavigator.pop();
                 }),
                 textColor: Colors.white,
-                leading: Icon(Icons.logout_outlined),
-                title: Text("Logout"),
+                leading: const Icon(Icons.logout_outlined),
+                title: const Text("Logout"),
               ),
             ],
           ),
