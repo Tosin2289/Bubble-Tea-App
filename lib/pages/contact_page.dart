@@ -22,7 +22,7 @@ class Contact extends StatelessWidget {
                 padding: const EdgeInsets.all(12.0),
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: [
+                  children: const [
                     Text("Developer :", style: TextStyle(fontSize: 20)),
                     Text("Phenomes",
                         style: TextStyle(
@@ -34,7 +34,7 @@ class Contact extends StatelessWidget {
                 padding: const EdgeInsets.all(12.0),
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: [
+                  children: const [
                     Text("Number", style: TextStyle(fontSize: 20)),
                     SelectableText("+234 ********",
                         style: TextStyle(
@@ -46,7 +46,7 @@ class Contact extends StatelessWidget {
                 padding: const EdgeInsets.all(12.0),
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: [
+                  children: const [
                     Text("Email", style: TextStyle(fontSize: 20)),
                     SelectableText("phenomes@gmail.com",
                         style: TextStyle(
@@ -54,10 +54,10 @@ class Contact extends StatelessWidget {
                   ],
                 ),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 40,
               ),
-              Text(
+              const Text(
                 "*The above info are not real",
                 style: TextStyle(fontSize: 16, color: Colors.red),
               ),
@@ -69,7 +69,7 @@ class Contact extends StatelessWidget {
         onPressed: (() {
           Navigator.pop(context);
         }),
-        child: Icon(Icons.phone),
+        child: const Icon(Icons.phone),
       ),
     );
   }

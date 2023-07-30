@@ -24,7 +24,7 @@ class _CartState extends State<Cart> {
                 padding: const EdgeInsets.all(25.0),
                 child: Column(
                   children: [
-                    Text(
+                    const Text(
                       "Your Cart",
                       style: TextStyle(
                         fontSize: 20,
@@ -38,19 +38,19 @@ class _CartState extends State<Cart> {
                               return DrinkTile(
                                   drink: drink,
                                   onPressed: (() => removeFromCart(drink)),
-                                  trailling: Icon(Icons.delete));
+                                  trailling: const Icon(Icons.delete));
                             }))),
                     MaterialButton(
+                      color: Colors.brown,
                       shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(10)),
                       minWidth: 300.0,
                       height: 60,
                       onPressed: () {},
-                      child: Text(
+                      child: const Text(
                         "Pay",
                         style: TextStyle(color: Colors.white, fontSize: 20),
                       ),
-                      color: Colors.brown,
                     )
                   ],
                 ),

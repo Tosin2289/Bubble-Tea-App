@@ -9,12 +9,12 @@ class About extends StatelessWidget {
       backgroundColor: Colors.grey[200],
       body: SafeArea(
         child: Center(
-          child: Container(
+          child: SizedBox(
             child: Padding(
               padding: const EdgeInsets.all(8.0),
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.spaceAround,
-                children: [
+                children: const [
                   Text(
                     "About Me",
                     style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),

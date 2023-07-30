@@ -6,7 +6,7 @@ import 'package:flutter/material.dart';
 import '../components/drawer.dart';
 
 class HomePage extends StatefulWidget {
-  HomePage({Key? key}) : super(key: key);
+  const HomePage({Key? key}) : super(key: key);
 
   @override
   State<HomePage> createState() => _HomePageState();
@@ -20,12 +20,12 @@ class _HomePageState extends State<HomePage> {
     });
   }
 
-  final List<Widget> _pages = [Shop(), Cart()];
+  final List<Widget> _pages = [const Shop(), const Cart()];
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        iconTheme: IconThemeData(color: Colors.black),
+        iconTheme: const IconThemeData(color: Colors.black),
         elevation: 0,
         backgroundColor: Colors.transparent,
       ),
@@ -34,7 +34,7 @@ class _HomePageState extends State<HomePage> {
         onTabChange: ((index) => navigatebottombar(index)),
       ),
       body: _pages[_selectedIndex],
-      drawer: myDrawer(),
+      drawer: const myDrawer(),
     );
   }
 }
