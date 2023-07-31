@@ -47,7 +47,7 @@ class IntroPage extends StatelessWidget {
               color: Colors.brown,
               onPressed: (() {
                 Navigator.push(context, MaterialPageRoute(builder: ((context) {
-                  return HomePage();
+                  return const HomePage();
                 })));
               }),
               child: const Text(

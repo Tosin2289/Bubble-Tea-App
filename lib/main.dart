@@ -17,7 +17,7 @@ class MyApp extends StatelessWidget {
       builder: ((context, child) => MaterialApp(
             debugShowCheckedModeBanner: false,
             theme: ThemeData(primarySwatch: Colors.brown),
-            home: Splash(),
+            home: const Splash(),
           )),
     );
   }

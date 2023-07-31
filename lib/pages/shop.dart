@@ -28,17 +28,17 @@ class _ShopState extends State<Shop> {
     return Consumer<BubbleTeaShop>(builder: ((context, value, child) {
       return Scaffold(
         backgroundColor: Colors.brown[200],
-        drawer: myDrawer(),
+        drawer: const myDrawer(),
         body: SafeArea(
             child: Padding(
           padding: const EdgeInsets.all(25.0),
           child: Column(
             children: [
-              Text(
+              const Text(
                 "Bubble Tea Shop",
                 style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 50,
               ),
               Expanded(
